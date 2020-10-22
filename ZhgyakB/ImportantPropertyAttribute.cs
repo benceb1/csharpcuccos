@@ -4,7 +4,14 @@ using System.Text;
 
 namespace ZhgyakB
 {
-    class ImportantPropertyAttribute
+    [AttributeUsage(AttributeTargets.Property)]
+    class ImportantPropertyAttribute : Attribute
     {
+        public string Reason { get; set; }
+
+        public ImportantPropertyAttribute(string reason)
+        {
+            Reason = reason;
+        }
     }
 }
