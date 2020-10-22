@@ -8,6 +8,7 @@ namespace ZhgyakB
 {
     class Huto
     {
+        [ImportantProperty("Fontos")]
         public string Marka { get; set; }
         public int Kapacitas { get; set; }
         
